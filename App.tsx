@@ -6,12 +6,20 @@ import React from 'react';
 import { StyleSheet, View } from 'react-native';
 import { PokemonList } from './PokemonList';
 import { PokemonDetails } from './PokemonDetails';
+import { useFonts } from 'expo-font';
 
 
 export const Stack = createStackNavigator();
 
 export default function App() {
 
+  const [loaded] = useFonts({
+    FontPokemon: require('./assets/fonts/Pokemon_Solid.ttf'),
+  });
+
+  if(!loaded){
+    return <></>
+  }
 
   return (
     <NavigationContainer>
