@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "pokemon-news",
-    "slug": "pokemon-news",
+    "name": "pokemon",
+    "slug": "pokemon",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
